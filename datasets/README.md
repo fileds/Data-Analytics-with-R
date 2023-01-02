@@ -1,30 +1,31 @@
-# Datasets available in the course
+# Dataset list
+FOr all Kaggle datasets, look at "Code" to see inspiration of what cvan be done.
 
-### Kaggle: Titanic
+### Titanic [Kaggle]
 https://www.kaggle.com/datasets/heptapod/titanic
 
-### Kaggle: World Energy Consumption
+### World Energy Consumption [Kaggle]
 https://www.kaggle.com/datasets/pralabhpoudel/world-energy-consumption
 
-### Kaggle: Brazilian E-Commerce
+### Brazilian E-Commerce [Kaggle]
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
-### 17k Mobile Strategy Games
+### 17k Mobile Strategy Games [Kaggle]
 https://www.kaggle.com/datasets/tristan581/17k-apple-app-store-strategy-games
 
-### Kaggle: COVID-19
+### COVID-19 [Kaggle]
 https://www.kaggle.com/datasets/meirnizri/covid19-dataset
 
-### Kaggle: Global pollution
+### Global pollution [Kaggle]
 https://www.kaggle.com/datasets/zvr842/global-pollution-by-counties
 
-### Kaggle: 500 stocks daily updated
+### 500 stocks daily updated [Kaggle]
 https://www.kaggle.com/datasets/andrewmvd/sp-500-stocks
 
-### Kaggle: GapMinder - Income Inequality
+### GapMinder - Income Inequality [Kaggle]
 https://www.kaggle.com/datasets/psterk/income-inequality
 
-### Kaggle: Gapminder World
+### Gapminder World [Kaggle]
 https://www.kaggle.com/datasets/tklimonova/gapminder-datacamp-2007
 
 Hans Rosling visualization. Could be interesting recreating.
