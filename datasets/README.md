@@ -1,5 +1,5 @@
 # Dataset list
-FOr all Kaggle datasets, look at "Code" to see inspiration of what cvan be done.
+For all Kaggle datasets, look at "Code" to see inspiration of what cvan be done.
 
 ### Titanic [Kaggle]
 https://www.kaggle.com/datasets/heptapod/titanic
