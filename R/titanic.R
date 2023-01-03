@@ -1,8 +1,9 @@
 library(tidyverse)
+library(ggrepel)
 rm(list = ls())
 
 # Load dataset into a tibble.
-titanic <- read_csv("../datasets/titanic.csv")
+titanic <- read_csv("datasets/titanic.csv")
 
 # Get to know the tibble
 ## Print the number of rows, observations; number of columns, variables; and 
@@ -38,6 +39,8 @@ titanic <- titanic %>%
 head(titanic)
 
 # Handle missing values
+# TODO: Add something about imputation even though we do not use it in the 
+# course.
 ## Summarise NAs across all columns in the tibble 
 titanic %>% 
   summarise(across(everything(), ~ sum(is.na(.))))
@@ -56,18 +59,43 @@ head(titanic)
 titanic <- titanic %>% 
   na.omit()
 
+titanic %>%
+  ggplot(aes(x = Age, y = Fare, label = Age)) + 
+  geom_point() +
+  geom_text_repel()
+
 # Logistic regression for survival prediction
 # TODO: Use training and test data
 ## Fit a logistic regression model
 model <- glm("Survived ~ Age + Fare", data = titanic, family = "binomial")
 
-## Print the coeafficients
 model$coefficients
+
+# Chi squared test of Sex and Survived. Spoiler alert: No men survived
+chisq.test(titanic$Sex, titanic$Survived)
+
+titanic %>%
+  ggplot(aes(x = Sex, y = Survived)) +
+  geom_boxplot()
+
+titanic %>%
+  group_by(Sex) %>%
+  summarize(Count = n(),
+            Survived = sum(Survived),
+            Survived_prcnt = sum(Survived) / n())
 
 # t test of different price of men and women
 titanic %>%
   ggplot(aes(x = Fare, col = Sex)) +
   geom_density()
+titanic %>%
+  ggplot(aes(x = TicketClass, fill = Sex)) +
+  geom_bar() +
+  theme_bw()
+titanic %>%
+  ggplot(aes(x = TicketClass, fill = Sex)) +
+  geom_bar(position = "fill") +
+  theme_bw()
 
 mens_fare <- titanic %>% 
   filter(Sex == "male") %>%
