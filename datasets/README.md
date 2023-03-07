@@ -13,6 +13,8 @@ https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 ### 17k Mobile Strategy Games [Kaggle]
 https://www.kaggle.com/datasets/tristan581/17k-apple-app-store-strategy-games
 
+EDA?: https://www.kaggle.com/code/hakanyuzbasioglu/eda-mobile-games
+
 ### COVID-19 [Kaggle]
 https://www.kaggle.com/datasets/meirnizri/covid19-dataset
 
